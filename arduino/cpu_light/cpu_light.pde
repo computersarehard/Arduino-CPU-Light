@@ -90,6 +90,12 @@ byte bytesRead = 0;
 byte buffer[BUFFER_SIZE];
 
 byte displayIndex = 0;
+/**
+* These are the pins that toggle an LED to be on.
+* I'm using NPN transistors connected the common cathode to ground.
+* When an output is high it, the transistor is allowing current to flow through 
+* the LED to ground. When it is low no current is flowing.
+**/
 byte displayAddresses[] = {11, 12, 13};
 
 Color currentColor = {0, 255, 0};
